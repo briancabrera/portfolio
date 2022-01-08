@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import "./home.scss"
 import { Link } from 'react-router-dom'
-import Navbar from "../NavBar/Navbar.jsx"
+import Navbar from "../Navbar/Navbar.jsx"
 
 export default function Home() {
     const [table, setTable] = useState(false);

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import "./Intro.scss"
 import { Link } from 'react-router-dom'
+import Navbar from "../Navbar/Navbar.jsx"
 
 export default function Intro() {
 
@@ -9,14 +10,14 @@ export default function Intro() {
     const [houseHovered, setHouseHovered] = useState(false)
 
     const changeDialogue = () => {
-        dialogue < 5 && setDialogue(dialogue + 1)
+        dialogue < 6 && setDialogue(dialogue + 1)
     }
 
     return (
         <div className="introContainer">
             <div className="house" onMouseEnter={() => setHouseHovered(true)} onMouseLeave={() => setHouseHovered(false)}>
                 {   
-                    dialogue !== 5 ? 
+                    dialogue !== 6 ? 
                     <img src={require("../resources/house.png")} alt="" id="closedDoor"/>
                     :
                         !houseHovered ? 
