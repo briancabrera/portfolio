@@ -1,0 +1,40 @@
+.navbar {
+    color: white;
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+
+
+    .container {
+        padding: 0px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 70px;
+
+        .icons {
+            display: flex;
+            align-items: center;
+            padding-right: 75px;
+
+            #github {
+                height: 47px;
+            }
+
+            img {
+                height: 35px;
+                margin-right: 40px;
+            }
+            
+            span {
+                margin-right: 20px;
+                cursor: pointer;
+            }
+        }
+        
+    } 
+}
+
+
