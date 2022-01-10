@@ -1,0 +1,28 @@
+.card {
+    width: 15vw;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+
+    &.animated {
+        animation: anime 0.75s infinite ease-in-out alternate;
+    }
+
+    img {
+        width: 20vw;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@keyframes anime {
+    100% {
+        transform: translateY(-10px)
+    }
+}

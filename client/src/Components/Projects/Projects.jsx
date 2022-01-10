@@ -1,10 +1,15 @@
-import React from 'react'
-import Card from "./Card/Card.jsx"
+import {useState} from 'react'
+import Grid from "./Grid/Grid.jsx"
+import Navbar from "../Navbar/Navbar.jsx"
+import "./projects.scss"
+
 
 export default function Projects() {
+
     return (
-        <div>
-            
+        <div className="projects">
+            <Navbar projects={true}/>
+            <Grid />
         </div>
     )
 }
