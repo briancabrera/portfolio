@@ -1,0 +1,64 @@
+$labelcolor: #7a3e12;
+$inputcolor: #fbcb6e;
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .background {
+        z-index: -1;
+        
+        img {
+            width: 44vw;
+        }
+    }
+
+    .form-container {
+        position: absolute;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .form-group {
+                padding-top: 2.5vh;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+
+                label {
+                    color: $labelcolor;
+                    font-style: italic;
+                    font-size: 20px;
+                    padding-bottom: 5px;
+                    padding-top: 10px;
+                }
+
+                input {
+                    border: none;
+                    background-color: $inputcolor;
+                    color: $labelcolor;
+                    width: 13.75vw;
+                    height: 3vh;
+
+                    &#message {
+                        height: 10vh;
+                    }
+                }
+            }
+            #submit-btn {
+                width: 7vw;
+                height: 3vh;
+                border: none;
+                background-color: $inputcolor;
+                color: $labelcolor;
+                margin-top: 2.5vh;
+                cursor: pointer;
+            }
+        }
+    }
+}
