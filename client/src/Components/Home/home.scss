@@ -9,20 +9,28 @@
     
     .animated {
         animation: anime 1.5s infinite ease-in-out alternate;
-    }
-    
-    .link {
-        text-decoration: none;
-        color: black;
-        
-        .btn {
-            padding: 1px;
-            font-weight: 500;
-            font-size: 30px;
-            font-style: italic;
-            cursor: pointer;
+
+        &.links {
+            height:500px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            .link {
+                text-decoration: none;
+                color: black;
+                
+                .btn {
+                    padding: 1px;
+                    font-weight: 500;
+                    font-size: 30px;
+                    font-style: italic;
+                    cursor: pointer;
+                }
+            }
         }
     }
+    
     
     
 

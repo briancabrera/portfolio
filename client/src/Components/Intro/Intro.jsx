@@ -2,6 +2,7 @@ import { useState } from 'react'
 import "./Intro.scss"
 import { Link } from 'react-router-dom'
 import Navbar from "../Navbar/Navbar.jsx"
+import Ghostly from '../Ghostly/Ghostly'
 
 export default function Intro() {
 
@@ -40,7 +41,7 @@ export default function Intro() {
                     :
                     <>
                         <img src={require("../resources/ghost.gif")} alt="" id="ghostly" onClick={() => changeDialogue()}/>
-                        <img src={require(`../resources/intro/intro${dialogue}.png`)} alt="" className="dialogue"/>
+                        <img src={require(`../resources/ghostly/intro${dialogue}.png`)} alt="" className="dialogue"/>
                     </>
                 }
             </div>
