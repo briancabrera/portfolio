@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from "../Navbar/Navbar.jsx"
 import "./about.scss"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 export default function About() {
     return (

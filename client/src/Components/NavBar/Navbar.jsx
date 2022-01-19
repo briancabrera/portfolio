@@ -1,9 +1,10 @@
 import {useState} from 'react'
 import "./navbar.scss"
-import { Redirect } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 const Navbar = (props) => {
     const [view, setView] = useState(true)
+    const { pathname } = useLocation()
 
     return (
         <div className="navbar">
@@ -15,16 +16,17 @@ const Navbar = (props) => {
                     <a href="https://github.com/briancabrera" target="_blank">
                         <img src={require("../resources/logos/github.png")} alt="" id="github" />
                     </a>
-                </div>
                     {
-                        props.projects ?
-                            view ?
-                            <span onClick={() => setView(false)} className="view">Grid</span>
-                            :
-                            <span onClick={() => setView(true)} className="view">Slides</span>
+                        pathname !== "/home" ?
+                        <Link to="/home" className="link">
+                            <span>
+                                Home
+                            </span>
+                        </Link>
                         :
                         null
                     }
+                </div>
             </div>  
         </div>
     )
