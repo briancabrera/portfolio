@@ -19,6 +19,12 @@
     &:hover {
         cursor: pointer;
     }
+
+    .refs {
+        z-index: 5;
+        position: relative;
+        bottom: 55%;
+    }
 }
 
 @keyframes anime {
