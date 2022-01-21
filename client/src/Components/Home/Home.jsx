@@ -19,12 +19,14 @@ export default function Home() {
                         About me
                     </span>
                 </Link>
-                <Link to="/about" className="animated link">
-                    <span className="btn" 
+                <div className="animated link">
+                    <a href="https://drive.google.com/file/d/1u4qgyO6JLU7pUXz6ngI8MsECRVEwCIVs/view?usp=sharing"
+                    target="_blank"
+                    className="btn" 
                     onMouseEnter={() => setResume(true)} onMouseLeave={() => setResume(false)}>
                         Resume
-                    </span>
-                </Link>
+                    </a>
+                </div>
             </div>
             <div className="animated room">
                 <img src={require("../resources/house/inside/inside.png")} alt="" id={about || projects || contact ? "roomhidden" : "room"}/>

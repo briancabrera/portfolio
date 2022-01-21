@@ -10,7 +10,7 @@ export default function About() {
             <Navbar />
             <div className="text">
                 <span id="span1">
-                I'm Brian, a Full-Stack Developer born and raised in Punta del Este, Uruguay.
+                I'm Brian, a Full Stack Developer. Punta del Este, Uruguay.
                 </span>
                 <span className="span2">
                 I graduated from Henry, and worked for SuiteDB in Montevideo.
@@ -22,13 +22,10 @@ export default function About() {
                 If I had to describe myself in one word, determined is the one to go. I always give 100% in everything I do.
                 </span>
                 <span className="span2">
-                To me, there's no beast that cannot be tamed, no challenge that cannot be overcome, and no objective that cannot be reached.
-                </span>
-                <span id="span3">
                 To keep it simple:
                 </span>
-                <span id="span4">
-                Work hard, hard work.
+                <span className="span2">
+                work hard, hard work.
                 </span>
             </div>
             <div className="skills">
