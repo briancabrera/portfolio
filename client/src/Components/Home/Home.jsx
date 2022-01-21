@@ -29,10 +29,11 @@ export default function Home() {
                 </div>
             </div>
             <div className="animated room">
-                <img src={require("../resources/house/inside/inside.png")} alt="" id={about || projects || contact ? "roomhidden" : "room"}/>
-                <img src={require("../resources/house/inside/table.png")} alt="" className={about ? "furniture" : "furniture hidden"} />
+                <img src={require("../resources/house/inside/inside.png")} alt="" id={about || projects || contact || resume? "roomhidden" : "room"}/>
+                <img src={require("../resources/house/inside/about.png")} alt="" className={about ? "furniture" : "furniture hidden"} />
                 <img src={require("../resources/house/inside/closet.png")} alt="" className={projects ? "furniture" : "furniture hidden"}/>
                 <img src={require("../resources/house/inside/envelope.png")} alt="" className={contact ? "furniture" : "furniture hidden"}/>
+                <img src={require("../resources/house/inside/table.png")} alt="" className={resume ? "furniture" : "furniture hidden"} />
             </div>
             <div className="animated links">
                 <Link to="/projects" className="animated link">
