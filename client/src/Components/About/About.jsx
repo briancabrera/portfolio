@@ -1,10 +1,12 @@
-import React from 'react'
+import {useState} from 'react'
 import Navbar from "../Navbar/Navbar.jsx"
 import "./about.scss"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 export default function About() {
+    const [stack, setStack] = useState(true);
+
     return (
         <div className="about">
             <Navbar />
@@ -21,15 +23,30 @@ export default function About() {
                 <span className="span2">
                 If I had to describe myself in one word, determined is the one to go. I always give 100% in everything I do.
                 </span>
-                <span className="span2">
-                To keep it simple:
-                </span>
-                <span className="span2">
-                work hard, hard work.
-                </span>
             </div>
             <div className="skills">
-                test
+                {
+                    stack ?
+                    <div className="skillset">
+                        <span className="changestack" onClick={() => setStack(false)}>
+                            Back-end
+                        </span>
+                        <span>
+                            Front-end
+                        </span>
+                        <img src={require("../resources/about/frontend.png")} alt="" />
+                    </div>
+                    :
+                    <div className="skillset">
+                        <span className="changestack" onClick={() => setStack(true)}>
+                            Front-end
+                        </span>
+                        <span>
+                            Back-end
+                        </span>
+                        <img src={require("../resources/about/backend.png")} alt="" />
+                    </div>
+                }
             </div>
         </div>
     )

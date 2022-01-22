@@ -41,7 +41,7 @@ export default function Intro() {
                     :
                     <>
                         <img src={require("../resources/ghost.gif")} alt="" id="ghostly" onClick={() => changeDialogue()}/>
-                        <img src={require(`../resources/ghostly/intro${dialogue}.png`)} alt="" className="dialogue"/>
+                        <img src={require(`../resources/ghostly/intro${dialogue}.png`)} alt="" className="dialogue" onClick={() => changeDialogue()}/>
                     </>
                 }
             </div>
