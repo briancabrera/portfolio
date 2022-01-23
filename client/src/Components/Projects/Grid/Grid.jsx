@@ -9,11 +9,18 @@ export default function Grid() {
         "getflygrid.png"
     ];
 
+    const links = [
+        "https://github.com/briancabrera/netflix-clone",
+        "https://github.com/hernancur/app-canbis"
+    ]
+
     return (
         <div className="grid">
             {
                 images.map((image, index) =>
-                <Card image={image} key={index}/>)
+                <a href={links[index]} target="_blank">
+                    <Card image={image} key={index}/>
+                </a>)
             }
         </div>
     )
