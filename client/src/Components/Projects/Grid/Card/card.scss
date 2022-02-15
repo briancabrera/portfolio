@@ -1,17 +1,17 @@
 .card {
-    width: 15vw;
+    width: 240px;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0px;
+    padding: 50px 25px;
 
     &.animated {
         animation: anime 0.75s infinite ease-in-out alternate;
     }
 
     img {
-        width: 20vw;
+        width: 320px;
         overflow: hidden;
         position: absolute;
     }

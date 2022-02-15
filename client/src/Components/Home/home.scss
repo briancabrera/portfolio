@@ -4,6 +4,7 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     
@@ -16,6 +17,7 @@
             align-items: center;
             justify-content: space-evenly;
             flex-direction: column;
+            padding: 0px 25px;
             .link {
                 text-decoration: none;
                 color: black;
