@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.70e6a0a1.css",
+    "main.js": "/static/js/main.7c9d0786.js",
+    "static/media/animated-book.gif": "/static/media/animated-book.eac1225628ad36ffe88d.gif",
+    "static/media/ghost.gif": "/static/media/ghost.1657809b3844516edd37.gif",
+    "static/media/animatedform.gif": "/static/media/animatedform.3054209b3de45ce06295.gif",
+    "static/media/linkedin.png": "/static/media/linkedin.a680cb8ad2b88be03d17.png",
+    "static/media/frontend.png": "/static/media/frontend.8a99cecdc9c1d0d64d97.png",
+    "static/media/netflixgrid.png": "/static/media/netflixgrid.1810e8f03df4e5e96a9d.png",
+    "static/media/getflygrid.png": "/static/media/getflygrid.1c744a4b23df43cde680.png",
+    "static/media/netflixslider.png": "/static/media/netflixslider.06b7ab0c31d760ec3455.png",
+    "static/media/getflyslider.png": "/static/media/getflyslider.2058aa3056ef18f9fb4c.png",
+    "static/media/backend.png": "/static/media/backend.cdade59cfd5b1855be1d.png",
+    "static/media/envelope.png": "/static/media/envelope.47ce81ba9ba465d6859e.png",
+    "static/media/inside.png": "/static/media/inside.be63b0ccc8643a25dfff.png",
+    "static/media/intro5.png": "/static/media/intro5.03395a3e593df624fae3.png",
+    "static/media/intro3.png": "/static/media/intro3.5807b14c4a7c0dd99521.png",
+    "static/media/intro6.png": "/static/media/intro6.090b7e54b20ac416760b.png",
+    "static/media/sleepingGhost.png": "/static/media/sleepingGhost.33613237b5943d5ffaff.png",
+    "static/media/intro2.png": "/static/media/intro2.fc47a99cbffba68c7873.png",
+    "static/media/intro4.png": "/static/media/intro4.69afb2d482796d21e1d6.png",
+    "index.html": "/index.html",
+    "main.70e6a0a1.css.map": "/static/css/main.70e6a0a1.css.map",
+    "main.7c9d0786.js.map": "/static/js/main.7c9d0786.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70e6a0a1.css",
+    "static/js/main.7c9d0786.js"
+  ]
+}

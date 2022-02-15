@@ -6,12 +6,14 @@ export default function Grid() {
 
     const images = [
         "netflixgrid.png",
-        "getflygrid.png"
+        "getflygrid.png",
+        "justachat.png"
     ];
 
     const links = [
         "https://github.com/briancabrera/netflix-clone",
-        "https://github.com/hernancur/app-canbis"
+        "https://github.com/hernancur/app-canbis",
+        "https://github.com/briancabrera/chat-app"
     ]
 
     return (

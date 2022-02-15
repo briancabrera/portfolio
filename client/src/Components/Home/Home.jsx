@@ -20,7 +20,7 @@ export default function Home() {
                     </span>
                 </Link>
                 
-                    <a href="https://drive.google.com/file/d/1u4qgyO6JLU7pUXz6ngI8MsECRVEwCIVs/view?usp=sharing"
+                    <a href="https://drive.google.com/file/d/1NigsLrNtCC9e4P8FCLlMTHAZo8zt3b0H/view?usp=sharing"
                     target="_blank"
                     className="animated link" >
                         <span className="btn" 

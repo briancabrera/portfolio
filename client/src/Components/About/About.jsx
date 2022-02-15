@@ -7,6 +7,8 @@ import 'swiper/css';
 export default function About() {
     const [stack, setStack] = useState(true);
 
+
+
     return (
         <div className="about">
             <Navbar />
@@ -25,28 +27,29 @@ export default function About() {
                 </span>
             </div>
             <div className="skills">
-                {
-                    stack ?
                     <div className="skillset">
-                        <span className="changestack" onClick={() => setStack(false)}>
-                            Back-end
-                        </span>
-                        <span>
-                            Front-end
-                        </span>
-                        <img src={require("../resources/about/frontend.png")} alt="" />
-                    </div>
-                    :
-                    <div className="skillset">
-                        <span className="changestack" onClick={() => setStack(true)}>
-                            Front-end
-                        </span>
-                        <span>
-                            Back-end
-                        </span>
-                        <img src={require("../resources/about/backend.png")} alt="" />
-                    </div>
-                }
+                        <div class="toggle" onClick={() => stack ? setStack(false) : setStack(true)}>
+                            <input type="checkbox" class="check"/>
+                            <b class="b switch"/>
+                            <b class="b track"/>
+                        </div>
+                        {
+                        stack ?
+                        <>
+                            <span>
+                                Front-end
+                            </span>
+                            <img src={require("../resources/about/frontend.png")} alt="" />
+                        </>
+                        :
+                        <>
+                            <span>
+                                Back-end
+                            </span>
+                            <img src={require("../resources/about/backend.png")} alt="" />
+                        </>
+                        }
+                        </div>
             </div>
         </div>
     )
