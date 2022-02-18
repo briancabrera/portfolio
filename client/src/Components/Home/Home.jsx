@@ -28,7 +28,13 @@ export default function Home() {
                             Resume
                         </span>
                     </a>
-                
+
+                <Link to="/game" className="animated link">
+                    <span className="btn" 
+                    onMouseEnter={() => setAbout(true)} onMouseLeave={() => setAbout(false)}>
+                        About me
+                    </span>
+                </Link>
             </div>
             <div className="animated room">
                 <img src={require("../resources/house/inside/inside.png")} alt="" id={about || projects || contact || resume? "roomhidden" : "room"}/>
