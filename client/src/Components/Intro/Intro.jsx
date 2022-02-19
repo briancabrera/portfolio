@@ -1,10 +1,15 @@
 import { useState } from 'react'
+import { useDispatch } from 'react-redux'
 import "./Intro.scss"
 import { Link } from 'react-router-dom'
 import Navbar from "../Navbar/Navbar.jsx"
 import Ghostly from '../Ghostly/Ghostly'
 
+import * as actions from "../../Actions/actions"
+
 export default function Intro() {
+
+    const dispatch = useDispatch()
 
     const [dialogue, setDialogue] = useState(1)
     const [asleep, setAsleep] = useState(true)
