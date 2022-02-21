@@ -14,28 +14,4 @@
         justify-content: center;
         align-items: center;
     }
-
-    .virtualAssistant {
-        position: absolute;
-        width: 50vw;
-        right:47vw;
-        top: 70vh;
-        display: flex;
-        align-items: center;
-        margin-left: 10vw;
-
-        .dialogue {
-            position: relative;
-            width: 30vw;
-            cursor: pointer;
-        }
-
-        
-
-        #ghostly {
-            width: 176px;
-            height: 197px;
-            cursor: pointer;
-        }
-    }
 }

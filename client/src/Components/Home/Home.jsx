@@ -2,6 +2,8 @@ import { useState } from 'react'
 import "./home.scss"
 import { Link } from 'react-router-dom'
 import Navbar from "../Navbar/Navbar.jsx"
+import Ghostly from "../Ghostly/Ghostly.jsx"
+import UserInteractions from "../UserInteractions/UserInteractions.jsx"
 
 export default function Home() {
     const [about, setAbout] = useState(false);
@@ -51,6 +53,8 @@ export default function Home() {
                     </span>
                 </Link>
             </div>
+            <Ghostly />
+            <UserInteractions />
         </div>
     )
 }

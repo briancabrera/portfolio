@@ -1,8 +1,8 @@
 import {useState} from 'react'
 import Navbar from "../Navbar/Navbar.jsx"
+import UserInteractions from "../UserInteractions/UserInteractions.jsx"
 import "./about.scss"
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+
 
 export default function About() {
     const [stack, setStack] = useState(true);
@@ -51,6 +51,7 @@ export default function About() {
                         }
                         </div>
             </div>
+            <UserInteractions />
         </div>
     )
 }

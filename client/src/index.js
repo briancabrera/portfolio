@@ -8,11 +8,9 @@ import thunk from "redux-thunk";
 import { reducer } from "./Reducer/reducer";
 import { composeWithDevTools } from "redux-devtools-extension";
 
-const initialState = {
-  coffeeCups : 0
-}
 
-const store = createStore(reducer, initialState, composeWithDevTools(applyMiddleware(thunk)));
+
+const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
 
 
 ReactDOM.render(

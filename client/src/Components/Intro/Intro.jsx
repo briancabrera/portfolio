@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import "./Intro.scss"
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import Navbar from "../Navbar/Navbar.jsx"
 import Ghostly from '../Ghostly/Ghostly'
 
@@ -10,20 +10,14 @@ import * as actions from "../../Actions/actions"
 export default function Intro() {
 
     const dispatch = useDispatch()
-
-    const [dialogue, setDialogue] = useState(1)
-    const [asleep, setAsleep] = useState(true)
+    const introDialogue = useSelector(state => state.introDialogue)
     const [houseHovered, setHouseHovered] = useState(false)
-
-    const changeDialogue = () => {
-        dialogue < 6 && setDialogue(dialogue + 1)
-    }
 
     return (
         <div className="introContainer">
             <div className="house" onMouseEnter={() => setHouseHovered(true)} onMouseLeave={() => setHouseHovered(false)}>
                 {   
-                    dialogue !== 6 ? 
+                    introDialogue !== 6 ? 
                     <img src={require("../resources/house.png")} alt="" id="closedDoor"/>
                     :
                         !houseHovered ? 
@@ -35,21 +29,8 @@ export default function Intro() {
                 }
             </div>
 
-            { asleep && <img src={require("../resources/quest.gif")} alt="" id="quest"/> }
-
-            <div className="virtualAssistant">
-                {
-                    asleep ?
-                    <>
-                        <img src={require("../resources/sleepingGhost.png")} alt="" id="ghostly" onClick={() => setAsleep(false) && changeDialogue()}/>
-                    </>
-                    :
-                    <>
-                        <img src={require("../resources/ghost.gif")} alt="" id="ghostly" onClick={() => changeDialogue()}/>
-                        <img src={require(`../resources/ghostly/intro${dialogue}.png`)} alt="" className="dialogue" onClick={() => changeDialogue()}/>
-                    </>
-                }
-            </div>
+            <Ghostly />
+            
         </div>
     )
 }
